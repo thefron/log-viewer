@@ -12,6 +12,6 @@ define [
       @db.channel = @options.channel
 
     db:
-      changes: yes
+      changes: no # Change to yes to track changes
       view: 'byChannel'
       filter: "list/by_channel"

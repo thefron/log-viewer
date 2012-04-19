@@ -8,7 +8,7 @@ define [
     model: Log
     url: '/logs'
     db:
-      changes: yes
+      changes: no # Change to yes to track changes
       view: 'byCollection'
 
     initialize: (attrs, options) ->
