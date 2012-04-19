@@ -1,0 +1,31 @@
+$baseFontSize: 14px;
+@import "compass_twitter_bootstrap";
+body { padding-top: 60px; }
+@import "compass_twitter_bootstrap_responsive";
+
+#logs {
+  margin: 0;
+  list-style: none;
+}
+.log_entry {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  background: $grayLighter;
+  border: 1px solid darken($grayLighter, 10%);
+  @include border-radius(5px);
+  .channel {
+    font-size: $baseFontSize - 2;
+  }
+  .user {
+    font-weight: bold;
+    &:after {
+      content: ':';
+    }
+  }
+  .timeago {
+    float: right;
+    color: $grayLight;
+    font-size: $baseFontSize - 3;
+  }
+}

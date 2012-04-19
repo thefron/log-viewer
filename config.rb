@@ -3,6 +3,7 @@ require './app'
 # Compass Configuration
 
 require 'grid-coordinates'
+require 'compass_twitter_bootstrap'
 
 # Configuration to use when running within Sinatra
 project_path          = Sinatra::Application.root
