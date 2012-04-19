@@ -10,6 +10,8 @@ define [
   class LogView extends Backbone.View
     tagName: 'li'
     className: 'log_entry clearfix'
+    events:
+      'click .channel': 'filterChannel'
 
     render: ->
       @$el.html Mustache.render(LogTemplate, @model.toJSON())
@@ -17,3 +19,7 @@ define [
       @$('.user').css('color', @model.user.get('color'))
       @$('.timeago').timeago()
       @
+
+    filterChannel: (e) ->
+      e.preventDefault()
+      window.app.router.navigate("channels/#{@model.channel.get('name').substr(1)}", trigger: yes)
