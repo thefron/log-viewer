@@ -3,6 +3,9 @@ $baseFontSize: 14px;
 body { padding-top: 60px; }
 @import "compass_twitter_bootstrap_responsive";
 
+#channels_container {
+  position: fixed;
+}
 #logs {
   margin: 0;
   list-style: none;
