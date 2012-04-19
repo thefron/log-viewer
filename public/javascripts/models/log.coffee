@@ -2,8 +2,6 @@ define [
   'backbone'
   'cs!models/channel'
   'cs!models/user'
-  'order!lib/jquery.couch'
-  'order!lib/backbone-couchdb'
 ], (Backbone, Channel, User) ->
   class Log extends Backbone.Model
     initialize: (args) ->

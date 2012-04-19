@@ -6,7 +6,7 @@
     text: 'lib/text',
     jquery: 'lib/jquery-1.7.2.min',
     underscore: 'lib/underscore-min',
-    backbone: 'lib/backbone-min',
+    backbone: 'lib/backbone-wrapper',
     mustache: 'lib/mustache'
   },
   name: 'main',

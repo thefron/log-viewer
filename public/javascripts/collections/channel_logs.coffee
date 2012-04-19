@@ -4,8 +4,6 @@ define [
   'backbone'
   'cs!models/log'
   'cs!collections/logs'
-  'order!lib/jquery.couch'
-  'order!lib/backbone-couchdb'
 ], ($, _, Backbone, Log, Logs) ->
   class ChannelLogs extends Logs
     initialize: (attrs, options) ->

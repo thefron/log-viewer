@@ -1,7 +1,5 @@
 define [
   'backbone',
-  'order!lib/jquery.couch'
-  'order!lib/backbone-couchdb'
 ], (Backbone) ->
   class Channel extends Backbone.Model
     initialize: (args, options) ->

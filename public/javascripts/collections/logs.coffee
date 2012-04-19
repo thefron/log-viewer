@@ -3,8 +3,6 @@ define [
   'underscore'
   'backbone'
   'cs!models/log'
-  'order!lib/jquery.couch'
-  'order!lib/backbone-couchdb'
 ], ($, _, Backbone, Log) ->
   class Logs extends Backbone.Collection
     model: Log
