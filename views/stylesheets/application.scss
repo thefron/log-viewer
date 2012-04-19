@@ -12,6 +12,7 @@ body { padding-top: 60px; }
   margin: 10px;
   padding: 10px;
   background: $grayLighter;
+  word-break: break-all;
   border: 1px solid darken($grayLighter, 10%);
   @include border-radius(5px);
   .channel {
