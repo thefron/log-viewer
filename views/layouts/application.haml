@@ -6,7 +6,7 @@
     %title Ultra IRC Log Viewer
     %link{:href=>'/stylesheets/application.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
     %script{:type => "text/javascript", :src => "/javascripts/lib/modernizr-1.6.min.js"}
-    %script{:src => "/javascripts/lib/require.js", :"data-main" => '/javascripts/main' }
+    %script{:src => "/javascripts/lib/require.js", :"data-main" => '/javascripts/main.production' }
     
   %body
     = partial :_nav_main
@@ -20,4 +20,3 @@
                   all
           %div{:class => 'span10'}
             %ul{:id => 'logs'}
-    = partial :_analytics
