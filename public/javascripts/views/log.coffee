@@ -9,7 +9,7 @@ define [
 ], ($, _, Backbone, Mustache, LogTemplate) ->
   class LogView extends Backbone.View
     tagName: 'li'
-    className: 'log_entry'
+    className: 'log_entry clearfix'
 
     render: ->
       @$el.html Mustache.render(LogTemplate, @model.toJSON())
