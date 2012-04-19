@@ -15,7 +15,7 @@ set :public_folder, 'public'
 set :haml, {:format => :html5} # default Haml format is :xhtml
 
 use Rack::Auth::Basic, "Restricted Area" do |username, password|
-  [username, password] == ['rmrjfwlzuqhsmssj', 'rmrjsdkakeh']
+  [username, password] == ['admin', 'password']
 end
 
 # Application routes
